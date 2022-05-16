@@ -1,3 +1,4 @@
+import 'package:chat_tutorial/views/learn_getx/page_1.dart';
 import 'package:chat_tutorial/views/login_page/login_vm.dart';
 import 'package:chat_tutorial/views/models/load_status.dart';
 import 'package:chat_tutorial/views/register_page/register_page.dart';
@@ -90,6 +91,13 @@ class _LoginPageState extends State<LoginPage> {
               ],
               mainAxisAlignment: MainAxisAlignment.center,
             ),
+            SizedBox(height: 25),
+            TextButton(
+              child: Text('Learn GetX', style: TextStyle(fontSize: 16)),
+              onPressed: () {
+                Get.to(() => Page1());
+              },
+            )
           ],
         ),
       ),
